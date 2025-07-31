@@ -44,17 +44,17 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-50"></div>
-      <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute inset-0 bg-gradient-hero opacity-60"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-primary/15 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-serif">
             Dr. Jyoti Dabass
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
             Senior AI Engineer & Research Leader
           </p>
           
@@ -64,11 +64,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">
-            <Button variant="gradient" size="lg" className="animate-glow">
+            <Button variant="gradient" size="lg" className="animate-professional-glow">
               <BookOpen className="w-5 h-5" />
               View Research
             </Button>
-            <Button variant="social" size="lg">
+            <Button variant="professional" size="lg">
               <Github className="w-5 h-5" />
               GitHub Profile
             </Button>
@@ -84,7 +84,7 @@ const Hero = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-4 bg-card rounded-lg border border-border shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 hover:border-primary/20"
+                  className="group p-4 bg-card rounded-lg border border-border shadow-professional hover:shadow-elegant transition-all duration-400 hover:scale-105 hover:border-primary/30 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-center gap-3">
